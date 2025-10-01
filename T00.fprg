@@ -4,9 +4,9 @@
         <attribute name="name" value="T00"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-01 08:50:28 PM"/>
+        <attribute name="saved" value="2025-10-01 09:10:20 PM"/>
         <attribute name="created" value="QVNVUztMQVBUT1AtRkwzNUVORU87MjAyNS0xMC0wMTswODoyMTo0OSBQTTsyNjQ5"/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtRkwzNUVORU87MjAyNS0xMC0wMTswODo1MDoyOCBQTTsxOzI3NTY="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtRkwzNUVORU87MjAyNS0xMC0wMTswOToxMDoyMCBQTTsyOzI3NDY="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -16,31 +16,31 @@
             <input variable="b2"/>
             <if expression="b1 mod 2 == 0">
                 <then>
-                    <output expression="b1&amp;&quot;=genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama: Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="b1&amp;&quot;=ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan Pertama : Ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="b2 mod 2 == 0">
                 <then>
-                    <output expression="b2&amp;&quot;=genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua: Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="b2&amp;&quot;=ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua: Ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="b1&gt;b2">
                 <then>
-                    <output expression="&quot;paling besar=&quot;&amp;b1" newline="True"/>
+                    <output expression="&quot;Bilangan pertama lebih besar&quot;" newline="True"/>
                 </then>
                 <else>
                     <if expression="b1&lt;b2">
                         <then>
-                            <output expression="b2&amp;&quot;=paling besar&quot;" newline="True"/>
+                            <output expression="&quot;Bilangan kedua lebih besar&quot;" newline="True"/>
                         </then>
                         <else>
-                            <output expression="&quot;b1 dan b2 sama besar&quot;" newline="True"/>
+                            <output expression="&quot;Kedua bilangan sama besar&quot;" newline="True"/>
                         </else>
                     </if>
                 </else>
@@ -48,26 +48,26 @@
             <if expression="b1 mod 2 == 0 &amp;&amp; b2 mod 2 == 0">
                 <then>
                     <assign variable="hp" expression="b1+b2"/>
-                    <output expression="&quot;hasil penjumlahan:&quot;&amp;hp" newline="True"/>
+                    <output expression="&quot;Hasil penjumlahan:&quot;&amp;hp" newline="True"/>
                 </then>
                 <else>
                     <if expression="b1 mod 2 != 0 &amp;&amp; b2 mod 2 != 0">
                         <then>
                             <assign variable="hpk" expression="b1*b2"/>
-                            <output expression="&quot;hasil perkalian:&quot;&amp;hpk" newline="True"/>
+                            <output expression="&quot;Hasil perkalian:&quot;&amp;hpk" newline="True"/>
                         </then>
                         <else/>
                     </if>
                 </else>
             </if>
-            <if expression="b1 mod 2!=0 or b2 mod 2==0">
+            <if expression="b1 mod 2!=0 &amp;&amp; b2 mod 2==0">
                 <then>
-                    <output expression="&quot;berbeda jenis&quot;" newline="True"/>
+                    <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
                 </then>
                 <else>
-                    <if expression="b2 mod 2!=0 or b1 mod 2==0">
+                    <if expression="b2 mod 2!=0 &amp;&amp; b1 mod 2==0">
                         <then>
-                            <output expression="&quot;berbeda jenis&quot;" newline="True"/>
+                            <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
                         </then>
                         <else/>
                     </if>
